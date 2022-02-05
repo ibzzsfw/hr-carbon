@@ -36,9 +36,12 @@ const UI = () => (
                     [Human Resources]
                 </HeaderName>
                 <HeaderNavigation aria-label="Carbon Tutorial">
-                    <HeaderMenuItem element={Link} to="/repos">
-                        Repositories
+                    <HeaderMenuItem>Daily time</HeaderMenuItem>
+                    <HeaderMenuItem>Deduction</HeaderMenuItem>
+                    <HeaderMenuItem element={Link} to="/holiday">
+                        Holiday
                     </HeaderMenuItem>
+                    <HeaderMenuItem>Payment</HeaderMenuItem>
                 </HeaderNavigation>
                 <SideNav
                     aria-label="Side navigation"
@@ -46,9 +49,15 @@ const UI = () => (
                     isPersistent={false}>
                     <SideNavItems>
                         <HeaderSideNavItems>
-                            <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+                            <HeaderMenuItem>Daily time</HeaderMenuItem>
+                            <HeaderMenuItem>Deduction</HeaderMenuItem>
+                            <HeaderMenuItem element={Link} to="/holiday">
+                                Holiday
+                            </HeaderMenuItem>
+                            <HeaderMenuItem>Payment</HeaderMenuItem>
                         </HeaderSideNavItems>
                     </SideNavItems>
+
                 </SideNav>
                 <HeaderGlobalBar>
                     <HeaderGlobalAction aria-label="Notifications">
