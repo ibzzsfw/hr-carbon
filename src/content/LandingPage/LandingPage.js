@@ -7,6 +7,8 @@ import {
   Tab,
 } from 'carbon-components-react';
 
+import tab_illo from './tab-illo.png';
+
 const props = {
   tabs: {
     selected: 0,
@@ -53,7 +55,7 @@ const LandingPage = () => {
                   <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">
                     <img
                       className="landing-page__illo"
-                      src={`${process.env.PUBLIC_URL}/tab-illo.png`}
+                      src={tab_illo}
                       alt="Carbon illustration"
                     />
                   </div>
