@@ -27,7 +27,7 @@ const HolidayPage = () => {
     <div className="bx--grid bx--grid--full-width holiday-page">
       <div className="bx--row holiday-page__banner">
         <div className="bx--col-lg-16">
-          <h1 className="holiday-page__heading">Hhhhhhhhhhhhhhhhhhhhhhh</h1>
+          <h1 className="holiday-page__heading">Self-Scheduling Leave application</h1>
         </div>
       </div>
       <div className="bx--row holiday-page__r2">
@@ -55,45 +55,59 @@ const HolidayPage = () => {
               </div>
             </Tab>
             <Tab {...props.tab} label="Booking">
-              <div>
-                <ProgressIndicator
-                  currentIndex={0}
-                  style={{
-                    marginTop: '1rem',
-                    marginBottom: '3rem',
-                    justifyContent: 'center'
-                  }}>
-                  <ProgressStep
-                    current
-                    label="Step 1"
-                    secondaryLabel="Form"
-                  />
-                  <ProgressStep
-                    label="Step 2"
-                    secondaryLabel="Waiting"
-                  />
-                  <ProgressStep
-                    label="Step 3"
-                    secondaryLabel="Complete"
-                  />
-                  <ProgressStep
-                    invalid
-                    label="Step 4"
-                    secondaryLabel="Reconsider"
-                  />
-                </ProgressIndicator>
-              </div>
-              <div>
-                <HolidayForm />
+              <div
+                className='bix--grid'
+                style={{
+                  margin: '2rem'
+                }}
+              >
+                <div className="bx--row" style={{ marginBottom: '2rem' }}>
+                  <h2 className="holiday-page__subheading">
+                    Apply your leave application here
+                  </h2>
+                </div>
+                <div className="bx--row">
+                  <div className="bx--col-lg-3">
+                    <ProgressIndicator
+                      vertical spaceEqually
+                      currentIndex={0}
+                    // style={{
+                    //   marginTop: '1rem',
+                    //   marginBottom: '3rem',
+                    //   justifyContent: 'center'
+                    >
+                      <ProgressStep
+                        current
+                        label="Step 1"
+                        secondaryLabel="Form"
+                      />
+                      <ProgressStep
+                        label="Step 2"
+                        secondaryLabel="Waiting"
+                      />
+                      <ProgressStep
+                        label="Step 3"
+                        secondaryLabel="Complete"
+                      />
+                      <ProgressStep
+                        invalid
+                        label="Step 4"
+                        secondaryLabel="Reconsider"
+                      />
+                    </ProgressIndicator>
+                  </div>
+                  <div className='bx--col-lg-13'>
+                    <HolidayForm />
+                  </div>
+                </div>
               </div>
               <div>
                 <div>
                   <InlineNotification
                     style={{
-                      position:'fixed',
-                      bottom: '0',
-                      left: '0',
-                      margin: '16px'
+                      position: 'fixed',
+                      bottom: '16px',
+                      left: '16px',
                     }}
                     kind="info"
                     actions={<NotificationActionButton>Summary</NotificationActionButton>}

@@ -12,12 +12,14 @@ import {
     SideNav,
     SideNavItems,
     HeaderSideNavItems,
+    Search
 } from 'carbon-components-react';
 
 import {
     AppSwitcher20,
     Notification20,
     UserAvatar20,
+    Logout20
 } from '@carbon/icons-react';
 
 import { Link } from 'react-router-dom';
@@ -38,8 +40,8 @@ const UI = () => (
                 <HeaderNavigation aria-label="Carbon Tutorial">
                     <HeaderMenuItem>Daily time</HeaderMenuItem>
                     <HeaderMenuItem>Deduction</HeaderMenuItem>
-                    <HeaderMenuItem element={Link} to="/holiday">
-                        Holiday
+                    <HeaderMenuItem isCurrentPage element={Link} to="/holiday">
+                        Leave
                     </HeaderMenuItem>
                     <HeaderMenuItem>Payment</HeaderMenuItem>
                 </HeaderNavigation>
@@ -52,7 +54,7 @@ const UI = () => (
                             <HeaderMenuItem>Daily time</HeaderMenuItem>
                             <HeaderMenuItem>Deduction</HeaderMenuItem>
                             <HeaderMenuItem element={Link} to="/holiday">
-                                Holiday
+                                Leave
                             </HeaderMenuItem>
                             <HeaderMenuItem>Payment</HeaderMenuItem>
                         </HeaderSideNavItems>
@@ -60,6 +62,10 @@ const UI = () => (
 
                 </SideNav>
                 <HeaderGlobalBar>
+                    <Search
+                    size='lg'
+                    placeholder="Search"
+                    />
                     <HeaderGlobalAction aria-label="Notifications">
                         <Notification20 />
                     </HeaderGlobalAction>
@@ -68,6 +74,9 @@ const UI = () => (
                     </HeaderGlobalAction>
                     <HeaderGlobalAction aria-label="App Switcher">
                         <AppSwitcher20 />
+                    </HeaderGlobalAction>
+                    <HeaderGlobalAction aria-label="Log out">
+                        <Logout20 />
                     </HeaderGlobalAction>
                 </HeaderGlobalBar>
             </Header>

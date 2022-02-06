@@ -13,9 +13,9 @@ import {
 
 const HolidayForm = () => {
     return (
-        <Form className="bx--grid" style={{ maxWidth: '1312px', backgroundColor: 'f2f2f2' }}>
+        <Form className="bx--grid">
             <div className="bx--row">
-                <div className="bx--col-lg-10" style={{ marginBottom: '2rem' }}>
+                <div className="bx--col-lg-10">
                     <Select
                         id="select-type"
                         labelText="Select"
@@ -64,21 +64,23 @@ const HolidayForm = () => {
                     <FileUploaderItem status='edit' name='medical.pdf' style={{ marginBottom: '1rem' }} />
                 </div>
             </div>
-            <div className='bx--row' style={{justifyContent: 'flex-end'}}>
-                <Button
-                    kind="primary"
-                    tabIndex={0}
-                    type="submit"
-                >
-                    Submit
-                </Button>
-                <Button
-                    kind="danger"
-                    tabIndex={1}
-                    type="submit"
-                >
-                    Clear
-                </Button>
+            <div className='bx--row bx--col-lg-16'>
+                <div style={{ float: 'right' }}>
+                    <Button
+                        kind="primary"
+                        tabIndex={0}
+                        type="submit"
+                    >
+                        Submit
+                    </Button>
+                    <Button
+                        kind="danger"
+                        tabIndex={1}
+                        type="submit"
+                    >
+                        Clear
+                    </Button>
+                </div>
             </div>
         </Form >
     );
