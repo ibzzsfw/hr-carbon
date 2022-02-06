@@ -13,7 +13,7 @@ import {
 
 const HolidayForm = () => {
     return (
-        <Form className="bx--grid" style={{ maxWidth: '1312px' }}>
+        <Form className="bx--grid" style={{ maxWidth: '1312px', backgroundColor: 'f2f2f2' }}>
             <div className="bx--row">
                 <div className="bx--col-lg-10" style={{ marginBottom: '2rem' }}>
                     <Select

@@ -27,7 +27,7 @@ const HolidayPage = () => {
     <div className="bx--grid bx--grid--full-width holiday-page">
       <div className="bx--row holiday-page__banner">
         <div className="bx--col-lg-16">
-          <h1 className="holiday-page__heading">Manage you work-life-balance</h1>
+          <h1 className="holiday-page__heading">Hhhhhhhhhhhhhhhhhhhhhhh</h1>
         </div>
       </div>
       <div className="bx--row holiday-page__r2">
@@ -82,7 +82,26 @@ const HolidayPage = () => {
                     secondaryLabel="Reconsider"
                   />
                 </ProgressIndicator>
+              </div>
+              <div>
                 <HolidayForm />
+              </div>
+              <div>
+                <div>
+                  <InlineNotification
+                    style={{
+                      position:'fixed',
+                      bottom: '0',
+                      left: '0',
+                      margin: '16px'
+                    }}
+                    kind="info"
+                    actions={<NotificationActionButton>Summary</NotificationActionButton>}
+                    iconDescription="Day remains"
+                    subtitle={<span>14</span>}
+                    title="Day remains"
+                  />
+                </div>
               </div>
             </Tab>
             <Tab {...props.tab} label="Status">
@@ -97,18 +116,6 @@ const HolidayPage = () => {
             </Tab>
           </Tabs>
         </div>
-      </div>
-      <div>
-        <InlineNotification
-          style={{
-            justifyContent: 'end'
-          }}
-          kind="info"
-          actions={<NotificationActionButton>Summary</NotificationActionButton>}
-          iconDescription="Day remains"
-          subtitle={<span>14</span>}
-          title="Day remains"
-        />
       </div>
     </div>
   );
